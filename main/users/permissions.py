@@ -7,3 +7,11 @@ class IsSuperAdmin(BasePermission):
 class IsExecutor(BasePermission):
     def has_permission(self, request, view):
         return request.user.is_authenticated and request.user.role and request.user.role.name == 'executor'
+
+class IsAccountant(BasePermission):
+    def has_permission(self, request, view):
+        return (
+            request.user.is_authenticated and
+            request.user.role and
+            request.user.role.name == 'accountant'
+        )

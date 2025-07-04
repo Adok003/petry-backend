@@ -3,3 +3,8 @@ djangorestframework
 djangorestframework-simplejwt
 python-dotenv
 drf-spectacular
+pandas
+selenium
+psycopg2-binary
+python-decouple
+dj-database-url

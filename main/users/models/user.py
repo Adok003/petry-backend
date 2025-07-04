@@ -70,6 +70,7 @@ class Role(models.Model):
         ('superadmin', 'Супер Админ'),
         ('executor', 'Частный Судоисполнитель'),
         ('assistant', 'Помощник ЧСИ'),
+        ('accountant', 'Бухгалтер'),
     ]
     name = models.CharField(max_length=20, choices=ROLE_CHOICES, unique=True)
 
