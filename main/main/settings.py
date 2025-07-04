@@ -30,6 +30,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["petry.sdutechnopark.kz"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://petry.sdutechnopark.kz",
+]
 
 # Application definition
 
