@@ -28,10 +28,18 @@ SECRET_KEY = 'django-insecure-pk0k1+-2%7-x-^akhrvo&$%-%02bei&_m#hwdbuw-2vr-@x$0)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["petry.sdutechnopark.kz"]
+ALLOWED_HOSTS = ["petryapi.sdutechnopark.kz"]
 
+# Доверяем фронту для CSRF (если используешь cookies и сессию)
 CSRF_TRUSTED_ORIGINS = [
     "https://petry.sdutechnopark.kz",
+    "https://petryapi.sdutechnopark.kz"
+]
+
+# Если используешь django-cors-headers
+CORS_ALLOWED_ORIGINS = [
+    "https://petry.sdutechnopark.kz",
+    "https://petryapi.sdutechnopark.kz"
 ]
 
 # Application definition
