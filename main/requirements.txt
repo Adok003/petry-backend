@@ -11,3 +11,4 @@ dj-database-url
 gunicorn
 uvicorn
 whitenoise
+django-cors-headers
